@@ -5,6 +5,7 @@ import "./style.css"
 import Home from './pages/Home';
 import Error from "./pages/Error";
 import Root from "./layout/Root";
+import Sign_in from "./pages/Sign_in";
 
 const router = createBrowserRouter([
           {
@@ -15,7 +16,11 @@ const router = createBrowserRouter([
                               {
                                         path: "/",
                                         element: <Home />
-                              }
+                              },
+                              {
+                                        path: "sign-in",
+                                        element: <Sign_in />
+                              },
                     ]
           },
 ]);
