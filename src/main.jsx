@@ -16,7 +16,12 @@ const router = createBrowserRouter([
                     children: [
                               {
                                         path: "/",
-                                        element: <Home />
+                                        element: <Home />,
+                                        loader: async () => {
+                                                  const response = await fetch("/news.json");
+                                                  const data = await response.json();
+                                                  return data;
+                                        }
                               },
                               {
                                         path: "sign-in",

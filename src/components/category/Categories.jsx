@@ -12,7 +12,7 @@ const Categories = () => {
           }, [] )
 
           return (
-                    <div className="card-body">
+                    <div className="card-body p-0">
                               {
                                         categories.map( category => 
                                                   <Category
